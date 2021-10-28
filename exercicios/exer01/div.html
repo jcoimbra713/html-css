@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eleiões 2022</h1>
+    <p> o que é Comunismo?</p>
+    <input type="radio" name="voto" id="voto" />extiçao do estado e das instuiçôes privadas
+    <input type="radio" name="voto1" id="voto1" />democracia
+    
+    <input type="button" value="Verificar"  onclick="cal()" >
+    <div id="res"></div>
+<script>
+ function cal() {
+     var voto = window.document.querySelector('input#voto')
+     var voto1 = window.document.querySelector('input#voto1')
+     var res = window.document.querySelector('div#res')
+    var r = 'extiçao do estado e das instuiçôe privadas'
+
+     if (r == 'extiçao do estado e das instuiçôes privadas') {
+  res.innerHTML += (`correto`)
+ }else {
+    res.innerHTML += (`Errado`)
+    
+ }
+ }
+ 
+</script>    
+</body>
+</html>
